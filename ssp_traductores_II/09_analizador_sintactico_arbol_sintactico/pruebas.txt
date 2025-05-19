@@ -1,0 +1,89 @@
+int hola;
+--------------------------------------------------------
+void funcion(int a, float b) { int x; }
+--------------------------------------------------------
+
+int a;
+    int suma(int a, int b){
+    return a+b;
+}
+
+int main(){
+    float a;
+    int b;
+    int c;
+    c = a+b;
+    c = suma(8,9);
+}
+
+--------------------------------------------------------
+
+int var1, var2, var3, var4, var5; 
+
+float calcularPromedio(int a, int b, int c, int d, int e) { 
+    int suma;
+    suma = a + b + c + d + e; 
+    float promedio;
+    promedio = suma / 5.0; 
+    return promedio; 
+}
+
+float calcularVarianza(int a, int b, int c, int d, int e, float promedio) { 
+    float varianza; 
+    varianza= ((a - promedio) * (a - promedio) + (b - promedio) * (b - promedio) + (c - promedio) * (c - promedio) + (d - promedio) * (d - promedio) + (e - promedio) * (e - promedio)) / 5.0; 
+    return varianza; 
+}
+
+--------------------------------------------------------
+int max(int a, int b) { 
+    if (a > b) { 
+        return a; 
+    } else { 
+        return b; 
+    } 
+}
+int factorial(int n) { 
+    if (n == 0) { 
+        return 1; 
+    } else { 
+        return n * factorial(n - 1); 
+    } 
+}
+int main() { 
+    int num1, num2;
+    num1 = 5; 
+    num2 = 10; 
+    int m;
+    m = max(num1, num2); 
+    int f; 
+    f = factorial(m); 
+    return f; 
+}
+
+---------------------------------------------------------
+
+float distance(float x1, float y1, float x2, float y2) {
+    float dx; 
+    dx = x2 - x1;
+    float dy;
+    dy = y2 - y1;
+    return sqrt(dx * dx + dy * dy);
+}
+
+void swap(int a, int b) {
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+}
+
+int main() {
+    float dist; 
+    dist = distance(1.0, 1.0, 4.0, 5.0);
+    int x , y;
+    x = 10;
+    y=20;
+    swap(x, y);
+    return 0;
+}
+
